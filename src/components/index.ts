@@ -1,0 +1,8 @@
+export { default as Navbar } from './Navbar'
+export { default as FirstView } from './FirstView'
+export { default as About } from './About'
+export { default as Timeline } from './Timeline'
+export { default as Projects } from './Projects'
+export { default as Resume } from './Resume'
+export { default as FAQ } from './FAQ'
+export { default as Contact } from './Contact'
