@@ -1,2 +1,2 @@
 // components/Timeline/index.ts
-export { default } from './TimeLine'
+export { default } from './Timeline'
