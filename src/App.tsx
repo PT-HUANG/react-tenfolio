@@ -7,7 +7,7 @@ function App() {
     <>
       <BrowserRouter basename="/react-tenfolio/">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </>
