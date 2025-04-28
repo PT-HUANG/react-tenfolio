@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 function App() {
   return (
     <>
-      <BrowserRouter basename="/react-tenfolio">
+      <BrowserRouter basename="/react-tenfolio/">
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
