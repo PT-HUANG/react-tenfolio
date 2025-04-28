@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import {
   NavigationMenu,
   // NavigationMenuContent,
@@ -18,50 +19,64 @@ function Navbar() {
   };
   return (
     <>
-      <NavigationMenu className="relative bg-gray-800 max-w-full [&>div]:w-full px-2 py-4">
+      <NavigationMenu className="sticky top-0 bg-gray-800 max-w-full [&>div]:w-full px-2 py-4">
         <NavigationMenuList className="mx-auto w-full px-2 sm:px-6 lg:px-8 justify-between">
-          <Link
+          <RouterLink
             className="cursor-pointer transition-all ease-in-out text-lg text-white hover:text-zinc-400 hover:bg-transparent"
             to="/"
           >
             Home
-          </Link>
+          </RouterLink>
           <div className="hidden sm:flex">
-            <NavigationMenuLink
-              className="text-white mx-2 cursor-pointer"
-              href="#about"
-            >
-              About
+            <NavigationMenuLink className="text-white mx-2 cursor-pointer">
+              <ScrollLink to="about" smooth={true} duration={700} offset={-100}>
+                About
+              </ScrollLink>
             </NavigationMenuLink>
-            <NavigationMenuLink
-              className="text-white mx-2 cursor-pointer"
-              href="#timeline"
-            >
-              Timeline
+            <NavigationMenuLink className="text-white mx-2 cursor-pointer">
+              <ScrollLink
+                to="timeline"
+                smooth={true}
+                duration={700}
+                offset={-100}
+              >
+                Timeline
+              </ScrollLink>
             </NavigationMenuLink>
-            <NavigationMenuLink
-              className="text-white mx-2 cursor-pointer"
-              href="#projects"
-            >
-              Projects
+            <NavigationMenuLink className="text-white mx-2 cursor-pointer">
+              <ScrollLink
+                to="projects"
+                smooth={true}
+                duration={700}
+                offset={-100}
+              >
+                Projects
+              </ScrollLink>
             </NavigationMenuLink>
-            <NavigationMenuLink
-              className="text-white mx-2 cursor-pointer"
-              href="#resume"
-            >
-              Resume
+            <NavigationMenuLink className="text-white mx-2 cursor-pointer">
+              <ScrollLink
+                to="resume"
+                smooth={true}
+                duration={700}
+                offset={-100}
+              >
+                Resume
+              </ScrollLink>
             </NavigationMenuLink>
-            <NavigationMenuLink
-              className="text-white mx-2 cursor-pointer"
-              href="#faq"
-            >
-              FAQ
+            <NavigationMenuLink className="text-white mx-2 cursor-pointer">
+              <ScrollLink to="faq" smooth={true} duration={700} offset={-100}>
+                FAQ
+              </ScrollLink>
             </NavigationMenuLink>
-            <NavigationMenuLink
-              className="text-white mx-2 cursor-pointer"
-              href="#contact"
-            >
-              Contact
+            <NavigationMenuLink className="text-white mx-2 cursor-pointer">
+              <ScrollLink
+                to="contact"
+                smooth={true}
+                duration={700}
+                offset={-100}
+              >
+                Contact
+              </ScrollLink>
             </NavigationMenuLink>
           </div>
 

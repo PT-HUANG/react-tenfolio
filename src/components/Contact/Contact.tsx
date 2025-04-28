@@ -1,7 +1,9 @@
 function Contact() {
   return (
     <>
-      <div>Contact</div>
+      <div id="contact" className="h-[40vh] bg-emerald-400">
+        Contact
+      </div>
     </>
   );
 }

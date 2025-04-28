@@ -1,7 +1,9 @@
 function Projects() {
   return (
     <>
-      <div>Projects</div>
+      <div id="projects" className="h-[40vh] bg-rose-600">
+        Projects
+      </div>
     </>
   );
 }

@@ -1,7 +1,7 @@
 function FirstView() {
   return (
     <>
-      <div>First View</div>
+      <div className="h-[40vh] bg-red-50">First View</div>
     </>
   );
 }

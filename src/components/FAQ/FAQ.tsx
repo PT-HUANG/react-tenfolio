@@ -1,7 +1,9 @@
 function FAQ() {
   return (
     <>
-      <div>FAQ</div>
+      <div id="faq" className="h-[40vh] bg-fuchsia-400">
+        FAQ
+      </div>
     </>
   );
 }

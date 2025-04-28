@@ -1,7 +1,9 @@
 function Timeline() {
   return (
     <>
-      <div>Timeline</div>
+      <div id="timeline" className="h-[40vh] bg-lime-300">
+        Timeline
+      </div>
     </>
   );
 }
