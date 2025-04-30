@@ -1,7 +1,7 @@
 function Projects() {
   return (
     <>
-      <div id="projects" className="h-[40vh] bg-rose-600">
+      <div id="projects" className="h-[60vh] bg-rose-600">
         Projects
       </div>
     </>

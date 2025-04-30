@@ -1,7 +1,7 @@
 function Resume() {
   return (
     <>
-      <div id="resume" className="h-[40vh] bg-sky-500">
+      <div id="resume" className="h-[60vh] bg-sky-500">
         Resume
       </div>
     </>

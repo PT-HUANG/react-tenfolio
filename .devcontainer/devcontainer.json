@@ -17,10 +17,9 @@
 				"editor.formatOnSave": true
 			},
 			"extensions": [
-				"streetsidesoftware.code-spell-checker", // Code Spell Checker
 				"dbaeumer.vscode-eslint", // ESLint
 				"esbenp.prettier-vscode", // Prettier
-				"anseki.vscode-color", // Color Picker
+				"anseki.vscode-color" // Color Picker
 			]
 		}
 	},
