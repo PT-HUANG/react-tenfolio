@@ -118,3 +118,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+[data-aos="custom-fade-down"] {
+  opacity: 0;
+  transform: translateY(-25px);
+  transition-property: opacity, transform;
+  transition-duration: 600ms;
+  transition-timing-function: ease-out;
+}
+
+[data-aos="custom-fade-down"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}

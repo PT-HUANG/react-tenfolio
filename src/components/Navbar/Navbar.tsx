@@ -32,9 +32,13 @@ function Navbar() {
     <>
       <NavigationMenu
         id="navbar"
-        className="bg-gray-800 max-w-full [&>div]:w-full px-2 py-4"
+        className="z-999 max-w-full [&>div]:w-full px-2 py-4"
         style={{
-          position: currentSection !== "" ? "sticky" : "relative",
+          backgroundColor:
+            currentSection !== "firstview" && currentSection !== ""
+              ? "var(--color-gray-800)"
+              : "#000e24",
+          position: currentSection !== "" ? "sticky" : "absolute",
           top: currentSection !== "firstview" ? 0 : -100,
           transition: "all 0.5s cubic-bezier(.4, 0, .2, 1) 0.4s",
         }}
@@ -44,7 +48,12 @@ function Navbar() {
             className="cursor-pointer transition-all ease-in-out text-lg text-white hover:text-zinc-400 hover:bg-transparent"
             to="/"
           >
-            Home
+            <span className="text-sky-400 font-[Lilita_One] text-xl font-black">
+              &lt;/&gt;
+            </span>
+            <span className="ml-2 sm:ml-3 md:ml-4 lg:ml-5 font-bold text-xl">
+              Paul Huang
+            </span>
           </RouterLink>
           <div className="hidden sm:flex">
             <NavigationMenuLink
@@ -113,7 +122,7 @@ function Navbar() {
         </NavigationMenuList>
         {/* Mobile Toggle Menu */}
         <div
-          className="sm:hidden absolute top-full flex flex-col items-center gap-2 px-4 py-2 bg-gray-800"
+          className="sm:hidden absolute z-999 top-[99%] flex flex-col items-center gap-2 px-4 py-2 bg-gray-800"
           style={{
             clipPath: isOpen ? "inset(0% 0% 0% 0%)" : "inset(0% 0% 100% 0%)",
             transition: "all 0.2s ease-in-out",
