@@ -67,15 +67,6 @@ function Navbar() {
             </NavigationMenuLink>
             <NavigationMenuLink
               className="text-white mx-2 cursor-pointer"
-              data-active={currentSection === "timeline"}
-              onClick={() => {
-                handleScroll("timeline");
-              }}
-            >
-              Timeline
-            </NavigationMenuLink>
-            <NavigationMenuLink
-              className="text-white mx-2 cursor-pointer"
               data-active={currentSection === "projects"}
               onClick={() => {
                 handleScroll("projects");
@@ -137,15 +128,6 @@ function Navbar() {
             }}
           >
             About
-          </NavigationMenuLink>
-          <NavigationMenuLink
-            className="w-full cursor-pointer text-center text-white"
-            data-active={currentSection === "timeline"}
-            onClick={() => {
-              handleScroll("timeline");
-            }}
-          >
-            Timeline
           </NavigationMenuLink>
           <NavigationMenuLink
             className="w-full cursor-pointer text-center text-white"

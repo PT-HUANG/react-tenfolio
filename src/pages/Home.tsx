@@ -2,7 +2,6 @@ import {
   Navbar,
   FirstView,
   About,
-  Timeline,
   Projects,
   Resume,
   FAQ,
@@ -15,7 +14,6 @@ function Home() {
       <Navbar />
       <FirstView />
       <About />
-      <Timeline />
       <Projects />
       <Resume />
       <FAQ />
