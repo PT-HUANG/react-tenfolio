@@ -1,14 +1,40 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 type ProjectCardProps = {
   img?: string;
   name?: string;
   wide?: boolean;
   links?: string[];
   skills?: string[];
+  delay?: string;
 };
 
-function ProjectCard({ img, name, wide, links, skills }: ProjectCardProps) {
+function ProjectCard({
+  img,
+  name,
+  wide,
+  links,
+  skills,
+  delay,
+}: ProjectCardProps) {
+  useEffect(() => {
+    AOS.init({
+      offset: 120,
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: "ease", // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+    });
+  }, []);
+
   return (
     <div
+      data-aos="custom-fade-up"
+      data-aos-delay={delay}
       className={`rounded-lg bg-gray-800 m-2 overflow-hidden ${
         wide ? "sm:col-span-2 lg:col-span-4" : "lg:col-span-2"
       }`}

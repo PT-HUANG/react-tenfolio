@@ -131,3 +131,16 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+[data-aos="custom-fade-up"] {
+  opacity: 0;
+  transform: translateY(25px);
+  transition-property: opacity, transform;
+  transition-duration: 600ms;
+  transition-timing-function: ease-out;
+}
+
+[data-aos="custom-fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}

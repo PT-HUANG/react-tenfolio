@@ -36,6 +36,7 @@ function Projects() {
               wide={false}
               links={["https://github.com/PT-HUANG/my-movie-list", "none"]}
               skills={["HTML", "CSS", "JavaScript"]}
+              delay="300"
             />
             <ProjectCard
               img={alphashop}
@@ -51,6 +52,7 @@ function Projects() {
                 "Sass",
                 "JavaScript",
               ]}
+              delay="400"
             />
             <ProjectCard
               img={todolist}
@@ -66,6 +68,7 @@ function Projects() {
                 "Sass",
                 "Styled-components",
               ]}
+              delay="500"
             />
             <ProjectCard
               img={alphacast}
@@ -85,6 +88,7 @@ function Projects() {
                 "CSS",
                 "JavaScript",
               ]}
+              delay="500"
             />
             <ProjectCard
               img={randompassword}
@@ -102,6 +106,7 @@ function Projects() {
                 "CSS",
                 "JavaScript",
               ]}
+              delay="200"
             />
             <ProjectCard
               img={blogeditor}
@@ -118,6 +123,7 @@ function Projects() {
                 "CSS",
                 "JavaScript",
               ]}
+              delay="300"
             />
           </div>
         </div>
