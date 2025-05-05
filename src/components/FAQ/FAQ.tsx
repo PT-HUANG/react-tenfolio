@@ -3,7 +3,7 @@ function FAQ() {
   return (
     <>
       <div id="faq" className="bg-[#000e24]">
-        <div className="w-[60%] max-w-[700px] mx-auto pb-5">
+        <div className="w-[80%] max-w-[700px] mx-auto pb-5">
           <div
             className="
           text-white text-xl font-bold ml-2 mb-4

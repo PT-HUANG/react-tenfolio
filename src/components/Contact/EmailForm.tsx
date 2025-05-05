@@ -1,6 +1,44 @@
+import { useState } from "react";
+import { toast } from "sonner";
+
+type FormDataType = {
+  name: string;
+  email: string;
+  message: string;
+};
+
 function EmailForm() {
+  const [inputValue, setInputValue] = useState<FormDataType>({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleInput = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setInputValue((prev) => ({
+      ...prev,
+      [name as keyof FormDataType]: value,
+    }));
+  };
+
   const handleSubmit = () => {
-    alert("已寄出!");
+    const { name, email, message } = inputValue;
+    const nameLength = name.trim().length;
+    const emailLength = email.trim().length;
+    const messageLength = message.trim().length;
+    const isValidEmail = /^\S+@\S+\.\S+$/.test(email.trim());
+
+    if (!nameLength || !emailLength || !messageLength) {
+      toast.error("Oops!Please fill all the inputs.");
+    } else if (!isValidEmail) {
+      toast.error("Please enter a valid email address.");
+    } else {
+      toast.success("Thanks for your message!");
+      setInputValue({ name: "", email: "", message: "" });
+    }
   };
 
   return (
@@ -14,6 +52,8 @@ function EmailForm() {
             Name
           </label>
           <input
+            onChange={(e) => handleInput(e)}
+            value={inputValue.name}
             id="name"
             name="name"
             type="text"
@@ -30,6 +70,8 @@ function EmailForm() {
             Email
           </label>
           <input
+            onChange={(e) => handleInput(e)}
+            value={inputValue.email}
             id="email"
             name="email"
             type="email"
@@ -46,6 +88,8 @@ function EmailForm() {
             Message
           </label>
           <textarea
+            onChange={(e) => handleInput(e)}
+            value={inputValue.message}
             id="message"
             name="message"
             rows={6}
