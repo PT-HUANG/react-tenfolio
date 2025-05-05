@@ -5,13 +5,13 @@ import skills from "../../assets/skills";
 function About() {
   return (
     <>
-      <div id="about" className="bg-[#000e24]">
+      <div id="about" className="bg-[#000e24] pt-6">
         <div
-          className="w-[90%] h-[100%] mx-auto my-0 pb-10
-          md:flex
+          className="w-[90%] max-w-[1200px] h-[100%] mx-auto my-0 pb-10
+          md:flex md:items-center
         "
         >
-          <div className="flex flex-col items-center mb-10 md:w-[60%]">
+          <div className="flex flex-col items-center mb-10 md:w-[60%] my-4 lg:my-10">
             <img
               src={avatar}
               alt="avatar"
@@ -27,7 +27,7 @@ function About() {
               >
                 About Me
               </div>
-              <div className="text-white max-w-[500px]">
+              <div className="text-white max-w-[500px] mx-auto mt-2">
                 Hi, I'm Paul — a frontend developer with a background in
                 nursing. I enjoy creating intuitive, responsive interfaces and
                 solving real problems through design. I'm currently seeking

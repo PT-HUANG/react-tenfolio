@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import resume_1 from "@/assets/resume_1.jpg";
 import resume_2 from "@/assets/resume_2.jpg";
 import { Button } from "@/components/ui/button";
@@ -33,11 +34,11 @@ function Resume() {
                 </DialogHeader>
               </DialogContent>
             </Dialog>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <Link to="/resume.pdf" target="_blank" rel="noopener noreferrer">
               <Button className="cursor-pointer px-4 py-2 bg-yellow-400 text-blue-900 font-bold rounded-md hover:bg-yellow-300 transition-colors duration-300 md:px-8 md:py-6 md:text-base md:mt-4">
                 Download
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

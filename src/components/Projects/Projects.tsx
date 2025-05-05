@@ -12,7 +12,7 @@ function Projects() {
   return (
     <>
       <div id="projects" className="bg-[#000e24]">
-        <div className="w-[90%] h-[100%] mx-auto p-4 md:p-8">
+        <div className="w-[90%] max-w-[1600px] h-[100%] mx-auto p-4 md:p-8">
           <div
             className="
           text-white text-xl font-bold ml-2 mb-4

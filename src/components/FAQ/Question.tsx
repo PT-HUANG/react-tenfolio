@@ -28,11 +28,11 @@ function Question({ question, answer }: QuestionProps) {
         </AccordionTrigger>
         <AccordionContent
           className="
-        text-white font-bold bg-[#241d41] mt-2 p-3 rounded-sm
+        text-white bg-[#241d41] mt-2 p-3 rounded-sm
         md:text-lg md:p-5
         "
         >
-          {answer}
+          <pre style={{ whiteSpace: "pre-line" }}>{answer}</pre>
         </AccordionContent>
       </AccordionItem>
     </Accordion>
