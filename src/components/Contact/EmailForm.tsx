@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { toast } from "sonner";
+import { sendEmail } from "@/api/sendEmail";
 
 type FormDataType = {
   name: string;
@@ -24,7 +25,7 @@ function EmailForm() {
     }));
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const { name, email, message } = inputValue;
     const nameLength = name.trim().length;
     const emailLength = email.trim().length;
@@ -32,11 +33,12 @@ function EmailForm() {
     const isValidEmail = /^\S+@\S+\.\S+$/.test(email.trim());
 
     if (!nameLength || !emailLength || !messageLength) {
-      toast.error("Oops!Please fill all the inputs.");
+      toast.error("Oops! Please fill all the inputs.");
     } else if (!isValidEmail) {
       toast.error("Please enter a valid email address.");
     } else {
       toast.success("Thanks for your message!");
+      await sendEmail(name, email, message);
       setInputValue({ name: "", email: "", message: "" });
     }
   };
