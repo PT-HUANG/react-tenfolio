@@ -34,7 +34,10 @@ function Projects() {
               img={movielist}
               name="Movie List"
               wide={false}
-              links={["https://github.com/PT-HUANG/my-movie-list", "none"]}
+              links={[
+                "https://github.com/PT-HUANG/my-movie-list",
+                "https://pt-huang.github.io/my-movie-list/",
+              ]}
               skills={["HTML", "CSS", "JavaScript"]}
               delay="250"
             />
