@@ -45,7 +45,10 @@ function Projects() {
               img={alphashop}
               name="Alpha Shop"
               wide={false}
-              links={["https://github.com/PT-HUANG/alpha-shop", "none"]}
+              links={[
+                "https://github.com/PT-HUANG/alpha-shop",
+                "https://pt-huang.github.io/alpha-shop/",
+              ]}
               skills={[
                 "React",
                 "React hooks",
@@ -99,7 +102,7 @@ function Projects() {
               wide={false}
               links={[
                 "https://github.com/PT-HUANG/Random-Password-Generator",
-                "none",
+                "https://random-password-generator-9ngz.onrender.com",
               ]}
               skills={[
                 "Express",
@@ -115,7 +118,10 @@ function Projects() {
               img={blogeditor}
               name="Blog Editor"
               wide={true}
-              links={["https://github.com/PT-HUANG/react-blog-editor", "none"]}
+              links={[
+                "https://github.com/PT-HUANG/react-blog-editor",
+                "https://pt-huang.github.io/react-blog-editor/",
+              ]}
               skills={[
                 "React",
                 "Tailwind CSS",
