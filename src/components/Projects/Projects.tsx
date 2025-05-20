@@ -49,30 +49,25 @@ function Projects() {
                 "https://github.com/PT-HUANG/alpha-shop",
                 "https://pt-huang.github.io/alpha-shop/",
               ]}
-              skills={[
-                "React",
-                "React hooks",
-                "React context",
-                "HTML",
-                "CSS",
-                "Sass",
-                "JavaScript",
-              ]}
+              skills={["React", "React context", "Sass"]}
               delay="400"
             />
             <ProjectCard
               img={todolist}
               name="Todolist"
               wide={false}
-              links={["https://github.com/PT-HUANG/react-todolist", "none"]}
+              links={[
+                "https://github.com/PT-HUANG/todolist",
+                "https://todolist-cd951.web.app/",
+              ]}
               skills={[
                 "React",
-                "React-router",
-                "API",
-                "HTML",
-                "Bootstrap",
-                "Sass",
-                "Styled-components",
+                "TypeScript",
+                "Tailwind CSS",
+                "shadcn/ui",
+                "Firebase Auth",
+                "Firebase Hosting",
+                "Firestore",
               ]}
               delay="550"
             />
@@ -86,13 +81,11 @@ function Projects() {
               ]}
               skills={[
                 "React",
-                "React router",
-                "React bootstrap",
+                "React Router",
+                "React Bootstrap",
+                "OAuth 2.0",
                 "Spotify API",
-                "Axios",
-                "HTML",
-                "CSS",
-                "JavaScript",
+                "Sass",
               ]}
               delay="700"
             />
@@ -104,14 +97,7 @@ function Projects() {
                 "https://github.com/PT-HUANG/Random-Password-Generator",
                 "https://random-password-generator-9ngz.onrender.com",
               ]}
-              skills={[
-                "Express",
-                "Express-handlebars",
-                "HTML",
-                "Bootstrap",
-                "CSS",
-                "JavaScript",
-              ]}
+              skills={["Express", "Express-handlebars", "Bootstrap"]}
               delay="500"
             />
             <ProjectCard
@@ -124,13 +110,10 @@ function Projects() {
               ]}
               skills={[
                 "React",
+                "Quill.js",
                 "Tailwind CSS",
-                "Quill",
-                "shadcn UI",
+                "shadcn/ui",
                 "jszip",
-                "HTML",
-                "CSS",
-                "JavaScript",
               ]}
               delay="300"
             />
