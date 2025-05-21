@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseURL = "https://smtp-service-24du.onrender.com"
+const baseURL = "https://sendmail-bpyncbb24q-uc.a.run.app"
 
 export const sendEmail = async (name: string, email: string, message: string) => {
   try {
