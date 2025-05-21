@@ -95,9 +95,15 @@ function Projects() {
               wide={false}
               links={[
                 "https://github.com/PT-HUANG/Random-Password-Generator",
-                "https://random-password-generator-9ngz.onrender.com",
+                "https://app-ul6ofzfhya-uc.a.run.app/",
               ]}
-              skills={["Express", "Express-handlebars", "Bootstrap"]}
+              skills={[
+                "Firebase Functions",
+                "JavaScript",
+                "Express",
+                "Express-handlebars",
+                "Bootstrap",
+              ]}
               delay="500"
             />
             <ProjectCard
