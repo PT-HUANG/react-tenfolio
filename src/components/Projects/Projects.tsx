@@ -53,21 +53,19 @@ function Projects() {
               delay="400"
             />
             <ProjectCard
-              img={todolist}
-              name="Todolist"
+              img={blogeditor}
+              name="Blog Editor"
               wide={false}
               links={[
-                "https://github.com/PT-HUANG/todolist",
-                "https://todolist-cd951.web.app/",
+                "https://github.com/PT-HUANG/react-blog-editor",
+                "https://pt-huang.github.io/react-blog-editor/",
               ]}
               skills={[
                 "React",
-                "TypeScript",
+                "Quill.js",
                 "Tailwind CSS",
                 "shadcn/ui",
-                "Firebase Auth",
-                "Firebase Hosting",
-                "Firestore",
+                "jszip",
               ]}
               delay="550"
             />
@@ -107,19 +105,21 @@ function Projects() {
               delay="500"
             />
             <ProjectCard
-              img={blogeditor}
-              name="Blog Editor"
+              img={todolist}
+              name="Todolist"
               wide={true}
               links={[
-                "https://github.com/PT-HUANG/react-blog-editor",
-                "https://pt-huang.github.io/react-blog-editor/",
+                "https://github.com/PT-HUANG/todolist",
+                "https://todolist-cd951.web.app/",
               ]}
               skills={[
                 "React",
-                "Quill.js",
+                "TypeScript",
                 "Tailwind CSS",
                 "shadcn/ui",
-                "jszip",
+                "Firebase Auth",
+                "Firebase Hosting",
+                "Firestore",
               ]}
               delay="300"
             />
