@@ -35,16 +35,14 @@ function ProjectCard({
     <div
       data-aos="custom-fade-up"
       data-aos-delay={delay}
-      className={`rounded-lg bg-gray-800 m-2 overflow-hidden ${
-        wide ? "sm:col-span-2 lg:col-span-4" : "lg:col-span-2"
-      }`}
+      className={`rounded-lg bg-gray-800 m-2 overflow-hidden ${wide ? "sm:col-span-2 lg:col-span-4" : "lg:col-span-2"
+        }`}
     >
       <img
         src={img}
         alt="name"
-        className={`w-full h-55 ${
-          wide ? "sm:h-100 xl:h-120 2xl:h-144" : "sm:h-70 xl:h-84 2xl:h-100"
-        } object-cover object-left transition-transform duration-400 ease-in-out hover:scale-105`}
+        className={`w-full h-55 ${wide ? "sm:h-100 xl:h-120 2xl:h-144" : "sm:h-70 xl:h-84 2xl:h-100"
+          } object-cover object-left transition-transform duration-400 ease-in-out hover:scale-105`}
       />
       <div className="text-white text-lg xl:text-2xl font-bold p-3 pl-4 pb-2 mt-2">
         {name}

@@ -6,6 +6,7 @@ import {
   movielist,
   randompassword,
   todolist,
+  Img2Code
 } from "@/assets/projects";
 
 function Projects() {
@@ -120,6 +121,24 @@ function Projects() {
                 "Firebase Auth",
                 "Firebase Hosting",
                 "Firestore",
+              ]}
+              delay="600"
+            />
+            <ProjectCard
+              img={Img2Code}
+              name="Img2Code"
+              wide={false}
+              links={[
+                "https://github.com/PT-HUANG/Img2Code",
+                "https://pt-huang.github.io/Img2Code/",
+              ]}
+              skills={[
+                "React",
+                "TypeScript",
+                "Tailwind CSS",
+                "shadcn/ui",
+                "zustand",
+                "Dnd-kit",
               ]}
               delay="300"
             />

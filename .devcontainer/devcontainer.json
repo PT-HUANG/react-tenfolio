@@ -3,7 +3,7 @@
 {
 	"name": "react-tenfolio",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "react-tenfolio",
+	"image": "node:20-alpine",
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 	// Configure tool-specific properties.
