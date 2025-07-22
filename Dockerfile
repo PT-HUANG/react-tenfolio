@@ -1,5 +1,5 @@
-FROM node:20-alpine
-WORKDIR /app
+FROM node:20
+WORKDIR /workspaces/ReactTenfolio
 COPY package*.json .
 RUN npm install
 COPY . .
